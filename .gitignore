@@ -1,0 +1,29 @@
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+
+main
+
+bin/
+dist/
+
+*.out
+*.test
+*.prof
+
+.idea/
+*.iml
+cmake-build-*/
+out/
+
+.env
+.env.local
+*.secret
+
+# --- Dependency Management ---
+# Note: Do NOT ignore go.mod or go.sum.
+# Only ignore the vendor folder if you prefer to download deps on the fly.
+# vendor/
