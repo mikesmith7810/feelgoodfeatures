@@ -10,7 +10,7 @@ func CreateRouter() *gin.Engine {
 
 	v1 := r.Group("/api/v1")
 	{
-		v1.GET("/feature", handler.GetArticles)
+		v1.GET("/articles", handler.GetArticles)
 	}
 
 	return r
