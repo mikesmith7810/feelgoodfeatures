@@ -9,6 +9,7 @@ main
 
 bin/
 dist/
+feelgoodfeatures
 
 *.out
 *.test
