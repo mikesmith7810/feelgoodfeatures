@@ -11,7 +11,8 @@ import (
 
 func GenerateArticleSummary(prompt string) (string, error) {
 	ollamaRequest := domain.OllamaRequest{
-		Model:  "llama3.2",
+		//Model:  "llama3.2",
+		Model:  "llama3.2:1b",
 		Prompt: prompt,
 	}
 

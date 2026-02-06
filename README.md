@@ -69,6 +69,22 @@ Make sure Ollama is installed and running on your machine before starting the AP
 - You can download and run Ollama from [https://ollama.com/download](https://ollama.com/download).
 - Ensure the required model (e.g., `llama2`) is available in your Ollama instance.
 
+For optimum performance, i found using a smaller llm model was twice as quick - update this in the OllamaRequest when calling Ollama.
+
+I found with these settings, it took about 20 seconds to process 10 news articles.
+
+```
+ollama pull llama3.2:1b
+ollama list
+```
+
+Also - set the number of parralel threads ollama can run to a slightly higher number.
+
+`
+export OLLAMA_NUM_PARALLEL=5
+`
+
+
 ## Features
 
 - Fetches and summarizes 'feel good' news stories from a pre-configured list of websites.
